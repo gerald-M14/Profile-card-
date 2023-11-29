@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Kumbh+Sans:wght@200;300&family=Roboto:ital,wght@0,900;1,300;1,400;1,500&display=swap');
+:root{
+    --Dark_cyan: hsl(185, 75%, 39%);
+    --Very_dark_desaturated_blue: hsl(229, 23%, 23%);
+    --Dark_grayish_blue: hsl(227, 10%, 46%);
+    --Dark_gray: hsl(0, 0%, 59%);
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: var(--Dark_cyan);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    /* background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 51vw bottom 20vh, left 45vw top 50vh; */
+    
+    background-image: url(images/rose-petals.svg);
+    background-size: cover; /* Hace que la imagen de fondo cubra toda la ventana */
+    background-position: center; /* Centra la imagen de fondo */
+    height: 100vh; /* Establece la altura del cuerpo al 100% de la altura de la ventana */
+    overflow: hidden; /* Evita el desplazamiento vertical */
+    
+}
+
+
+
+.card-container{
+    margin: 170px auto;
+    width: 330px;
+    height: 380px;
+    border-radius: 10px;
+    overflow: hidden; /*sirve para que lo que se desborda de la caja no se vea*/
+    position: relative; /*para que los hijos queden dentro, si pongo 10px sean desde el borde de la tarjeta*/
+}
+
+.bubles{
+    background: url(images/dragon-scales.svg);
+    height: 140px;
+}
+.photomia{
+    width:96px
+}
+.photo{
+    position: absolute;
+    top: 87px;
+    left: 35%;
+    border: 5px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 96px;
+
+}
+
+.personal-data-container{
+    background-color: white;
+    height: 150px;
+    padding: 75px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.name{
+    font-weight: 700;
+    color: var(--Very_dark_desaturated_blue);
+}
+
+.age, .city{
+    color: var(--Dark_gray);
+}
+
+.city{
+    margin-top: 10px;
+    font-size: 0.8em;
+    
+}
+
+.stats{
+    background-color: white;
+    border-top: 1px solid var(--Dark_gray);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+}
+
+.statistics{
+    text-align: center;
+}
+
+.quantify{
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--Very_dark_desaturated_blue);
+}
+
+.units{
+    font-size: 0.6em;
+    color: var(--Dark_gray);
+    letter-spacing: 2px;
+}
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+        & .attribution a { 
+            color: hsl(228, 45%, 44%); 
+        
+        }
+}
+
+@media screen and (min-width: 1440px){
+    .card-container{
+        width:350px;
+    }
+}
